@@ -7,6 +7,7 @@ header{
     background-color: darkred;
 }
 #section1{
+    margin-top: -80px;
     display: flex;
     flex-direction: row;
     top : 0;
@@ -14,10 +15,31 @@ header{
 #myself{
     height: 100vh;
     width: 50vw;
+    padding-top: 80px;
 }
-aside{
+#portrait{
     width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-aside img{
+#portrait #nom{
+    padding-top:20px;
+    padding-bottom: 8px;
+    width : 25vw;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#portraitContainer{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 2%;
+}
+#portrait img{
     max-width : 25vw;
+    border-radius:50%;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
