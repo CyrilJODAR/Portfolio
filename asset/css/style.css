@@ -15,7 +15,11 @@ header{
 #myself{
     height: 100vh;
     width: 50vw;
-    padding-top: 80px;
+    padding-left: 80px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 #portrait{
     width: 50vw;
@@ -26,11 +30,13 @@ header{
     flex-direction: column;
 }
 #portrait #nom{
-    padding-top:20px;
+    margin-top:12px;
+    padding-top: 8px;
     padding-bottom: 8px;
     width : 25vw;
     text-align: center;
     font-size: 1.5rem;
+    box-shadow:  0 1px 0 0 rgba(0, 0, 0, 0.2) inset;
 }
 #portraitContainer{
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
