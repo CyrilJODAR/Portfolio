@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
     <header>
         <div id="section1">
             <div id="backgroundImg"></div>
             <div id="myself">
-                <div id="nom"><h2>Hi ! My name is Cyril JODAR</h2></div>
+                <div id="nom"><h2>Hi ! I am <span id="element"></span></h2></div>
                 <p>I was born the twenty second of May 1998 at Nouméa (Nouvelle Calédonie).</p>
                 <p>Calm, always with a smile and loves to discover new things.</p>
                 <p>I am not the most sociable person but I got no problem holding public speechs when needed.</p>
@@ -28,3 +29,12 @@
     </header>
 </body>
 </html>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Cyril JODAR', 'a Web developper', 'a Gamer'],
+      typeSpeed: 100,
+      loop: true,
+      showcursor:false,
+    });
+
+</script>
