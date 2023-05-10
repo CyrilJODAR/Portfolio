@@ -1,16 +1,25 @@
 *{
     margin: 0;
+    padding: 0;
 }
-
+/* ______________________________________________________________ */
+/* ______________________________________________________________ */
+/* CSS START for header */
+/* ______________________________________________________________ */
+/* ______________________________________________________________ */
 header{
     height: 100vh;
     background-color: rgba(16,15,22,255);
 
 }
+/* Section 1 inside of Header : contain presentation + photo */
+/* ______________________________________________________________ */
 #section1{
     display: flex;
     flex-direction: row;
 }
+/* setup background image for section 1 */
+/* ______________________________________________________________ */
 #backgroundImg{
     z-index: 98;
     content: "";
@@ -23,6 +32,8 @@ header{
     left: 0px;
     opacity: 3%;
 }
+/* description of myself */
+/* ______________________________________________________________ */
 #myself{
     height: 100vh;
     width: 50vw;
@@ -37,14 +48,6 @@ header{
 #myself p{
     margin-bottom: 10px;
 }
-#portrait{
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
 #myself #nom{
     width : 50vw;
     margin-bottom: 25px;
@@ -52,6 +55,16 @@ header{
     text-align: center;
     font-size: 1.5rem;
     box-shadow:  0 1px 0 0 rgba(19, 19, 19, 0.5) inset;
+}
+/* My photo */
+/* ______________________________________________________________ */
+#portrait{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #portrait img{
@@ -61,3 +74,90 @@ header{
     border-radius:50%;
     filter: drop-shadow(2px 2px 10px #000)
 }
+/* ______________________________________________________________ */
+/* ______________________________________________________________ */
+/* Start of Body
+SectionComp contains my skills */
+/* ______________________________________________________________ */
+/* ______________________________________________________________ */
+#sectionComp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 400px;
+}
+#sectionComp h2{
+    background-color: #B9D8C2;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+}
+/* Contain my Dev Skills */
+/* ______________________________________________________________ */
+#sectionCompDev{
+    background-color: #9AC2C9;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+}
+#sectionCompDevSub{
+    background-color: #8AA1B1;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+}
+#sectionCompDevSub h4{
+    width: 40%
+}
+#sectionCompDevSub div{
+    padding-left: 50px;
+    width: 40%;
+}
+/* Contain my Social Skills */
+/* ______________________________________________________________ */
+#sectionCompSocial{
+    background-color: #4A5043;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+}
+#sectionCompSocialSub{
+    background-color: #FFCB47;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+}
+#sectionCompSocialSub h4{
+    width: 40%
+}
+#sectionCompSocialSub div{
+    padding-left: 50px;
+    width: 40%;
+}
+ul, li{
+    list-style: none;
+}
+table, th, td {
+    border: 1px solid;
+  }
